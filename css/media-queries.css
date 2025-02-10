@@ -1,0 +1,16 @@
+@media (max-width: 900px) {
+    .information-main-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+    }
+    .information-image-container {
+        grid-row: 2;
+    }
+    .information-blogs-info {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .section-information-container .article-container {
+        max-width: 40%;
+    }
+}
