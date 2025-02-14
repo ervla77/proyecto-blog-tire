@@ -2,6 +2,7 @@
     .information-main-container {
         grid-template-columns: 1fr;
         grid-template-rows: 3fr;
+        
     }
     .information-image-container {
         grid-row: 2;
@@ -10,7 +11,15 @@
         grid-column: 1;
         grid-row: 3;
     }
+    .information-image-container img {
+        width: 100%;
+    }
     .section-information-container .article-container {
-        max-width: 40%;
+        max-width: 43%;
+    }
+    .conceptos-funtion-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
     }
 }

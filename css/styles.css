@@ -18,7 +18,7 @@ body {
 a {
     text-decoration: none;
     display: inline;
-    color: var(--textt-ancla);
+    color: var(--text-letter);
 }
 .home-body {
     position: fixed;
@@ -36,6 +36,11 @@ header {
     height: 140px;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 header .header-icons-container {
     width: 100%;
@@ -60,6 +65,7 @@ nav {
     height: 90px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: var(--blue-title);
 }
 nav .nav-logo-container {
     margin-left: 35px;
@@ -75,14 +81,14 @@ nav .profile-link {
     margin-right: 50px;
 }
 nav .profile-link a {
-    border-bottom: 1px solid var(--textt-ancla);
+    border-bottom: 1px solid var(--text-letter);
     font-weight: bolder;
 }
 .home-main {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     height: 100%;
-    background-image: url(../assents/homeImagen1.jpg);
+    background-image: url(../assents/imagenhome.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -96,23 +102,29 @@ nav .profile-link a {
 }
 section .home-main-text {
     color: var(--text-letter);
-    font-size: 18px;
+    background-color: rgba(15, 0, 133, 0.58);
+    border-radius: 20px;
+    height: auto;
+    font-size: 24px;
     font-weight: bolder;
     letter-spacing: 5px;
     text-align: center;
 }
 section .home-main-button {
-    width: 110px;
-    height: 50px;
+    width: 135px;
+    height: 60px;
     background-color: var(--header-green);
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
+    line-height: 60px;
 }
 section .home-main-button a {
-    color: var(--textt-ancla);
+    color: var(--text-letter);
     font-size: 18px;
     font-weight: bold;
+    padding: 7px;
 }
+
 
 .information-main {
     display: grid;
@@ -146,6 +158,17 @@ section .home-main-button a {
     text-align: center;
     margin-bottom: 50px;
     padding-bottom: 20px;
+    color: var(--blue-title);
+}
+.section-information-container h1 span {
+    display: inline-block;
+    background-image: url(../assents/reparar\ \(2\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
 }
 .section-information-container .article-container {
     display: inline-block;
@@ -166,6 +189,7 @@ section .home-main-button a {
     border: 2px solid var(--header-green);
     padding: 10px 15px;
     font-size: 14px;
+    color: var(--textt-ancla);
 }
 footer {
     width: 100%;
@@ -178,4 +202,64 @@ footer p {
     text-align: center;
     padding-top: 20px;
 }
+
+
+.main-conceptos-container {
+    padding: 0px 40px 40px;
+    display: grid;
+}
+.main-conceptos-container h2 {
+    text-align: center;
+    border-bottom: 2px solid var(--background-fondo);
+    padding-bottom: 20px;
+    color: var(--blue-title);
+}
+.conceptos-article-container p {
+    padding-right: 20px;
+}
+.main-conceptos-container .conceptos-article-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+    align-items: center;
+}
+.main-conceptos-container .conceptos-article-container img {
+    width: 70%;
+}
+.conceptos-funtion-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr;
+    padding-top: 20px;
+}
+.conceptos-funtion-container div {
+    text-align: center;
+}
+.conceptos-funtion-container div img {
+    width: 55%;
+}
+
+
+.main-part-container {
+    padding: 40px 50px 40px;
+    background-color: var(--background-fondo);
+}
+.main-part-container article img {
+    width: 100%;
+}
+.section-nomenclatura-contain {
+    padding: 30px 20px 20px;
+    background-color: var(--blue-title);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.section-nomenclatura-contain article img {
+    width: 100%;
+}
+.section-clasificacion-contain {
+    padding: 40px 50px 40px;
+    background-color: var(--background-fondo);
+}
+
 
